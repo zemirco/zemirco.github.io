@@ -19,9 +19,3 @@ author:
 
 # desc: maximum number of Posts you’d like to be displayed per- page
 paginate:         5
-
-# Custom vars
-#version:          1.0.0
-
-#github:
-#  repo:           https://github.com/poole/lanyon
