@@ -17,5 +17,5 @@ author:
   name:           'Mirco Zeiss'
   url:            https://twitter.com/zeMirco
 
-# desc: maximum number of Posts you’d like to be displayed per- page
+# desc: maximum number of Posts you’d like to be displayed per page
 paginate:         5
