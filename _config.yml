@@ -4,8 +4,8 @@ pygments:         true
 
 # Permalinks
 
-# desc: no .html at the end
-permalink:        pretty
+# desc: no /:year/:month/:day/
+permalink:        none
 
 # Setup
 title:            Mirco Zeiss
