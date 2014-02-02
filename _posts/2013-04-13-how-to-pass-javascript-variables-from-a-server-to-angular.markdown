@@ -1,17 +1,17 @@
 ---
 layout: post
-title: How to pass JavaScript variables from a server to Angular.js
+title: How to pass JavaScript variables from a server to AngularJS
 ---
 
 I came across the problem of sending JavaScript variables from my backend,
 in this case an [Express.js](http://expressjs.com/) server,
-to my frontend, means an [Angular.js](http://angularjs.org/) controller. I'm using [Jade](http://jade-lang.com/) as my template engine but the
+to my frontend, means an [AngularJS](http://angularjs.org/) controller. I'm using [Jade](http://jade-lang.com/) as my template engine but the
 presented solutions should work with others, too.
 
 Basically you've got three options for doing this:
 
   1. Put the variable into the view file inside a `script` tag
-  2. Make an HTTP request from Angular and serve the data as JSON from the
+  2. Make an HTTP request from AngularJS and serve the data as JSON from the
   backend
   3. Be smart and use `ng-init`
 
@@ -37,7 +37,7 @@ Afterwards you should see the message
 Express server listening on port 3000
 ```
 
-So far we've just set up our backend. Now it's time to add some Angular code to your `layout.jade`.
+So far we've just set up our backend. Now it's time to add some AngularJS code to your `layout.jade`.
 
 ```
 doctype 5
@@ -56,7 +56,7 @@ html(ng-app)
     block content
 ```
 
-Let's have a look at the above code. Activate Angular for the whole page by
+Let's have a look at the above code. Activate AngularJS for the whole page by
 adding `ng-app` as an attribute to the `html` tag. Load `angular.min.js` from
  Google CDN and `controller.js` from file. Inside the body I created a basic
  menu to navigate from one
@@ -120,7 +120,7 @@ block content
 ```
 {% endraw %}
 
-With `ng-controller="UserCtrl"` we tell Angular which controller we'd like
+With `ng-controller="UserCtrl"` we tell AngularJS which controller we'd like
  to use for all the DOM children of this element. At the bottom of the file
  we've put some extra JavaScript with a global variable called `users` that
  loads the contents from the local variable `users` passed to the view.
@@ -135,9 +135,9 @@ var users = {&quot;1&quot;:{&quot;name&quot;:&quot;john&quot;,&quot;email&quot;:
 That's not what we want. We want a nicely formatted String representation of
 our JSON object. That's why we need `!{}`.
 
-Then we need to load the content of this variable into our Angular scope.
+Then we need to load the content of this variable into our AngularJS scope.
 This is necessary for the `ng-repeat` directive as it doesn't work with
-variables, which are outside of the Angular scope. Open `controller.js` and
+variables, which are outside of the AngularJS scope. Open `controller.js` and
  put the following code inside.
 
 ```js
@@ -165,7 +165,7 @@ on the scope and our frontend.
 
 Still it is not the best solution. Let's look at another one.
 
-### 2. HTTP request from Angular to a JSON API
+### 2. HTTP request from AngularJS to a JSON API
 
 Inside `app.js` create another route for `GET /solution-two`
 
@@ -209,7 +209,7 @@ function UserTwoCtrl($scope, $http) {
 }
 ```
 
-As soon as the controller is initiated by Angular it automatically makes a
+As soon as the controller is initiated by AngularJS it automatically makes a
  GET request to `/solution-two/data` and assigns the fetched data to `$scope.users`.
  Now refresh the page and see what happened. You should see an
  error saying
@@ -239,7 +239,7 @@ should see our `users` object as JSON. Now go to `/solution-two` and, voila,
 everything works as expected. Three list items are created each showing name
 and email. The screenshot shows the extra request as the last action.
 
-![Angular HTTP request fetching JSON data](https://s3.amazonaws.com/mircozeiss.com/angular-extra-http-request.png)
+![AngularJS HTTP request fetching JSON data](https://s3.amazonaws.com/mircozeiss.com/angular-extra-http-request.png)
 
 #### Pro
 
@@ -272,7 +272,7 @@ What does that mean?
 Short answer: The expression (variable + content) given to ngInit is loaded
 into scope and made available under this name.
 
-Let's have a look at the example from the Angular docs
+Let's have a look at the example from the AngularJS docs
 
 {% raw %}
 
@@ -356,7 +356,7 @@ block content
 
 As you can see we pass our `users` variable to the Jade template as a local
 variable. Inside the template we convert the JSON object to its String
-representation and assign it to the Angular variable `users`. Later on we
+representation and assign it to the AngularJS variable `users`. Later on we
 have access to this variable and use a regular `ngRepeat` directive to create
  the list of users. Start the server, navigate to `/solution-three` and
  you should the expected list of users.
@@ -370,14 +370,14 @@ the least amount of code.
 #### Contra
 
 The concept behind `ngInit` might be a bit confusing at the beginning. For
-further insights and to understand how Angular actually renders a page I
+further insights and to understand how AngularJS actually renders a page I
 recommend reading [Bootstrap](http://docs.angularjs.org/guide/bootstrap) (not
  related to [Twitter's Bootstrap](http://twitter.github.io/bootstrap/)) and
  [HTML Compiler](http://docs.angularjs.org/guide/compiler).
 
 ### Conclusion
 
-You've learned that several solutions exist for passing data from your backend to an Angular
+You've learned that several solutions exist for passing data from your backend to an AngularJS
 controller. While solution one being the worst it depends on your architecture and your requirements
 whether solution two or three fits better. I personally tend to use the last solution as I have to make
 one less request to the server.
@@ -386,6 +386,6 @@ As promised at the beginning you can find the working example at GitHub under
  [server-vars-ngcontroller](https://github.com/zeMirco/zemirco.github.io/tree/source/code-examples/server-vars-ngcontroller).
 
 **Pro Tip**: Don't mix Jade's `for user in users` and `ng-repeat="user in users"`
- from Angular. I did that once at the beginning and was totally frustrated
+ from AngularJS. I did that once at the beginning and was totally frustrated
  because nothing worked as expected. You can image my feelings when I found
  that mistake. Well, it was late that night!
