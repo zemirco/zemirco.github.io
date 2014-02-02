@@ -1,5 +1,8 @@
 ---
 layout: post
+description:
+  AngularJS and PouchDB are a match made in heaven. Build complex offline apps
+  that replicate automatically as soon as you are back online.
 title: Building offline applications with AngularJS and PouchDB
 ---
 

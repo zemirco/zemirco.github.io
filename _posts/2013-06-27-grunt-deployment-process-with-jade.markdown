@@ -1,5 +1,8 @@
 ---
 layout: post
+description:
+  While developing web apps you want to have pretty CSS and JavaScript files for debugging.
+  For production you should minify and concatenate them in order to save bandwidth.
 title: Grunt deployment process with Jade
 ---
 

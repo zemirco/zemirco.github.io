@@ -1,5 +1,8 @@
 ---
 layout: post
+description:
+  Check username availability and validate passwords on the fly with AngularJS and Bootstrap.
+  Keep your sign-up process tidy and easy to use.
 title: GitHub like signup form with AngularJS and Bootstrap v3
 ---
 

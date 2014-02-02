@@ -1,5 +1,8 @@
 ---
 layout: post
+description:
+  Add cross-site request forgery (CSRF or XSRF) protection to your Express and AngularJS app.
+  Use a middleware on the server to send the token automatically and read it back from incoming requests.
 title: Using CSRF protection with Express and AngularJS
 ---
 

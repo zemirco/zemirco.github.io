@@ -1,5 +1,8 @@
 ---
 layout: post
+description:
+  I demonstrate how you implement Mozilla Persona in your Express app with a CouchDB database.
+  When you're done your user only need an email address to sign.
 title: Mozilla Persona example app with Express and CouchDB
 ---
 

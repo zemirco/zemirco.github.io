@@ -1,5 +1,8 @@
 ---
 layout: post
+description: 
+  You have three different ways to send data from your server to your AngularJS frontend. 
+  JSON requests and 'ng-init' are your best choices. 
 title: How to pass JavaScript variables from a server to AngularJS
 ---
 

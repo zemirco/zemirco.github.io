@@ -1,6 +1,8 @@
 ---
 layout: post
-description: An easy to use authentication solution for the famous Node.js web framework Express
+description: 
+  An easy to use authentication solution for the famous Node.js web framework Express.
+  Similar to everyauth and Passport but easier and with more features.
 title: Lockit - an Express authentication solution
 ---
 

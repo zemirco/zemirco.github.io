@@ -1,5 +1,8 @@
 ---
 layout: post
+description:
+  A performance comparison between PouchDB and Couchbase Lite.
+  Both are suitable for building complex (web) apps and they each have their strengths.
 title: PouchDB vs. Couchbase Lite - a performance review
 ---
 

@@ -1,5 +1,8 @@
 ---
 layout: post
+description: 
+  Use JavaScript promises when executing multiple parallel http requests to your CouchDB.
+  That way you avoid deeply nested callbacks and keep your code clean.
 title: Async CouchDB queries with nano and promises
 ---
 

@@ -1,5 +1,9 @@
 ---
 layout: post
+description:
+  Syncing web apps is usually done by using WebSockets or some other kind of (near-) real-time communication.
+  PouchDB has this features built-in and also allows persistent storage in the backend.
+  
 title: Sync multiple AngularJS apps without server via PouchDB
 ---
 

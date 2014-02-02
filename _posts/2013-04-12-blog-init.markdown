@@ -1,5 +1,6 @@
 ---
 layout: post
+description: I'm starting my own blog using Octopress and GitHub as hosting platform.
 title: Blog Init
 ---
 

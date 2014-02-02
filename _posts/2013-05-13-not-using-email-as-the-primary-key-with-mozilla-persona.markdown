@@ -1,5 +1,8 @@
 ---
 layout: post
+description:
+  Avoid using the user email address as the primary in your database.
+  By doing so a user is unable to change the address.
 title: Not using email as the primary key with Mozilla Persona
 ---
 

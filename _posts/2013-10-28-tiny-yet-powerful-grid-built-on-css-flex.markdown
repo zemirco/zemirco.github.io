@@ -1,5 +1,7 @@
 ---
 layout: post
+description: 
+  A tiny yet powerful CSS grid inspired by Bootstrap but with modern CSS3 'flex-box' features. 
 title: Flexbox-grid&#58; Tiny yet powerful grid built on CSS flex
 ---
 

@@ -1,5 +1,8 @@
 ---
 layout: post
+description:
+  Dokku is built on top of Docker and might be the smallest PaaS implementation you've ever seen.
+  Use it to run your own Heroku on Amazon EC2.
 title: Dokku in-depth tutorial - Your private PaaS on Amazon EC2
 ---
 
