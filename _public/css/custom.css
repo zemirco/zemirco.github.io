@@ -1,0 +1,31 @@
+
+.archive-list--post {
+  margin-bottom: 0;
+}
+
+.archive-list--title {
+  font-size: 1.25rem; 
+}
+
+.posts {
+  margin-bottom: 4em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.portrait {
+  border-radius: 50%;
+  margin: auto;
+}
+
+pre {
+  word-wrap: normal;
+  white-space: pre;
+  overflow-x: scroll;
+}
+
+.container .authorship a {
+  color: #ffffff;
+}
