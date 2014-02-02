@@ -33,6 +33,7 @@ The main module `lockit` is just a wrapper around those
 - [lockit-sendmail](https://github.com/zeMirco/lockit-sendmail)
 - [lockit-couchdb-adapter](https://github.com/zeMirco/lockit-couchdb-adapter)
 - [lockit-mongodb-adapter](https://github.com/zeMirco/lockit-mongodb-adapter)
+- [lockit-sql-adapter](https://github.com/zeMirco/lockit-sql-adapter)
 - [lockit-utilities](https://github.com/zeMirco/lockit-utilities)
 - [lockit-template-blank](https://github.com/zeMirco/lockit-template-blank)
  
@@ -40,7 +41,7 @@ When you have problems please try to open an issue in the according repository.
 
 ### How to use
 
-Install the module and the adapter for your database (couchdb or mongodb) via npm 
+Install the module and an adapter for your database via npm 
 
 ```
 npm install lockit lockit-couchdb-adapter
@@ -57,7 +58,7 @@ exports.db = 'http://127.0.0.1:5984/test';
 // exports.dbCollection = 'users';
 ```
 
-Use both modules in your `app.js` file
+Use both files in `app.js`.
 
 ```js
 var config = require('./config.js');
