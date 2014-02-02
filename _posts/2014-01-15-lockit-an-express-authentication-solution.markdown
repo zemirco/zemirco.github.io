@@ -86,9 +86,7 @@ link(rel='stylesheet', href='/css/bootstrap.min.css')
 ```
 
 Start your app like always with `node app.js`, open the browser and navigate to [localhost:3000/signup](http://localhost:3000/signup).
-I've also included an [example app](https://github.com/zeMirco/lockit/tree/master/example) that you can download and run locally.
-It has a special route `/profile` which demonstrates how to get user information from db and show them
-in the browser.
+I've built some [example apps](https://github.com/zeMirco/lockit/tree/master/examples) that you can download and run locally.
 
 You'll notice that nothing happens after you've signed up although
 you should see a message that an email has been sent to you.
