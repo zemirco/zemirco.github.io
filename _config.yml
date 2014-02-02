@@ -5,17 +5,18 @@ pygments:         true
 # Permalinks
 
 # desc: no /:year/:month/:day/
-permalink:        none
+permalink:        /:title
 
 # Setup
 title:            Mirco Zeiss
-#tagline:          'A Jekyll theme'
-description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:      My private blog about web engineering. Expect posts about JavaScript, Node.js, AngularJS and NoSQL databases.
 url:              http://mircozeiss.com/
 
 author:
-  name:           'Mirco Zeiss'
-  url:            https://twitter.com/zeMirco
+  name:           Mirco Zeiss
+  email:          mirco.zeiss@gmail.com
 
 # desc: maximum number of Posts you’d like to be displayed per page
-paginate:         5
+paginate:         100
+
+exclude:          [node_modules, Gruntfile.js, package.json]
