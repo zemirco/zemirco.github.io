@@ -29,3 +29,7 @@ pre {
 .container .authorship a {
   color: #ffffff;
 }
+
+table {
+  font-size: 14px;
+}
