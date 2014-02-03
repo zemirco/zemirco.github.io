@@ -23,7 +23,7 @@ img {
 pre {
   word-wrap: normal;
   white-space: pre;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .container .authorship a {
