@@ -1,7 +1,8 @@
 ---
 layout: post
 description:
-
+  AngularJS service to use image files from disk as fallback for Cordova
+  camera plugin
 title: Browser fallback for running PhoneGap camera plugin on localhost
 ---
 
