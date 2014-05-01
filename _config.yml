@@ -20,6 +20,3 @@ author:
 paginate:         100
 
 exclude:          [node_modules, Gruntfile.js, package.json]
-
-# fix GitHub pages url structure
-baseurl:          /blog
