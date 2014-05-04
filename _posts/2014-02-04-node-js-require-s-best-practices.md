@@ -20,11 +20,11 @@ ten or more modules. So the header of your main file could look like this.
 ```js
 var express = require('express');
 var time = require('moment');
-var cont = require(./controllers);
+var cont = require('./controllers');
 var parse = require('connect').utils.parseUrl;
 var fs = require('../common/filesystem');
 var data = require('./data/city');
-var dir = require(./models);
+var dir = require('./models');
 var http = require('http');
 ```
 
