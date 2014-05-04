@@ -158,5 +158,5 @@ but only after I've made some changes to the input values. Simply wrapping every
 into `scope.$apply(function() {})` solved this problem. Pretty obvious after all but I
 somehow thought `element.on()` wouldn't lose scope since it's a built-in AngularJS feature.
 
-The whole code with some more bits and pieces is on GitHub [ng-form-shake](). If you have any issues or
+The whole code with some more bits and pieces is on GitHub [ng-form-shake](https://github.com/zeMirco/ng-form-shake). If you have any issues or
 improvements let me know. There is also a [live demo](http://zemirco.github.io/ng-form-shake).
