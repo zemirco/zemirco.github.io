@@ -129,8 +129,8 @@ var moment = require('moment');
 var connect = require('connect');
 var parse = connect.utils.parseUrl;
 
-var controllers = require(./controllers);
-var models = require(./models/);
+var controllers = require('./controllers');
+var models = require('./models/');
 var filesystem = require('../common/filesystem');
 
 var data = require('./data/city.json');
