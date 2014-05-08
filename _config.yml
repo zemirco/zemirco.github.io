@@ -20,3 +20,7 @@ author:
 paginate:         100
 
 exclude:          [node_modules, Gruntfile.js, package.json]
+
+#
+gems:
+  - jekyll-sitemap
