@@ -197,7 +197,7 @@ gives the same result.
 ```js
 var txt = '';
 
-if (txt === '' && txt === undefined && txt === null) {
+if (txt === '' || txt === undefined || txt === null) {
   console.log('we have no text');
 }
 ```
