@@ -3,7 +3,6 @@ angular
 .module('myApp', [])
 .config([function() {}])
 .controller('IndexCtrl', ['$scope', '$http', function($scope, $http) {
-  console.log('awesome');
 
   $scope.countries = [
     'Germany',
