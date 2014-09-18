@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/angular/">
+  </head>
+  <body>
+    <p>Hello world!</p>
+    <div ng-controller="IndexCtrl">
+      <h1>static</h1>
+      <p>
+        Data from script.
+      </p>
+      <ul>
+        <li ng-repeat="country in countries">
+          {{country}}
+        </li>
+      </ul>
+      <h1>dynamic</h1>
+      <p>
+        Data from json url.
+      </p>
+      <ul>
+        <li ng-repeat="animal in animals">
+          {{animal}}
+        </li>
+      </ul>
+    </div>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
