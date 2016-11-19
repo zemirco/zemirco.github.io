@@ -9,7 +9,7 @@ permalink:        /:title
 
 # Setup
 title:            Mirco Zeiss
-description:      My private blog about web engineering. Expect posts about JavaScript, Node.js, AngularJS and NoSQL databases.
+description:      My private blog about web engineering. Expect posts about Go, JavaScript, Swift and databases.
 url:              http://mircozeiss.com/
 
 author:
